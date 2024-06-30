@@ -12,19 +12,10 @@ variable "vnet_name" {
   type        = string
 }
 
-variable "vnet_address_space" {
-  description = "The address space for the virtual network"
-  type        = list(string)
-  default     = ["10.0.0.0/16"]
-}
+
 variable "subnet_name" {
   description = "The name of the subnet"
-  type = string
-}
-variable "subnet_address_space" {
-  description = "The subnet address for the virtual network"
-  type        = list(string)
-  default     = ["10.0.0.0/24"]
+  type        = string
 }
 
 variable "nsg_name" {
@@ -45,12 +36,12 @@ variable "nsg_name" {
 #     source_address_prefix      = string
 #     destination_address_prefix = string
 #   }))
-  
+
 # }
 
 variable "public_ip_name" {
   description = "The name of public ip"
-  type = string
+  type        = string
 }
 
 variable "nic_name" {

@@ -1,0 +1,20 @@
+module "dev-env-vm" {
+  source                       = "..//azure-vm-module"
+  vm_name                      = var.vm_name
+  location                     = var.location
+  resource_group_name          = var.resource_group_name
+  vm_size                      = var.vm_size
+  admin_username               = var.admin_username
+  admin_public_key_path        = var.admin_public_key_path
+  os_disk_caching              = var.os_disk_caching
+  os_disk_storage_account_type = var.os_disk_storage_account_type
+  image_publisher              = var.image_publisher
+  image_offer                  = var.image_offer
+  image_sku                    = var.image_sku
+  image_version                = var.image_version
+  public_ip_name               = var.public_ip_name
+  nsg_name                     = var.nsg_name
+  nic_name                     = var.nic_name
+  subnet_name                  = var.subnet_name
+  vnet_name                    = var.vnet_name
+}

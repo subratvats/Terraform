@@ -1,0 +1,17 @@
+# terraform console
+index(var.sf,"oni") 
+# floor(10.9)
+# title("user-generated password file") #capitalize 1st word
+# Which type of variable does the function lookup working with?.... map
+aws_iam_user.cloud[6].name
+index(var.sf,"oni") 
+terraform workspace list
+
+terraform workspace new us-payroll
+
+terraform workspace new uk-payroll
+
+terraform workspace new india-payroll
+terraform workspace select us-payroll
+
+lookup(var.region, terraform.workspace)
